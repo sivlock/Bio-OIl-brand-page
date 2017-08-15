@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+ </script>
+<style>
+	/* --- desktop styles --- */
+	#bio-oil_wrapper {
+		max-width: 933px;
+		margin: 5px auto;
+		font-family: Arial, sans-serif, helvetica;
+		font-size: 16px;
+		text-align: center;
+	}
+	#bio-oil_hero {
+		background: url("images/lloyds_bo_hero_desktop.jpg") no-repeat scroll 0 0;
+		width: 933px;
+		height: 400px;
+	}
+	#bio-oil_125 a {
+    	height: 53px;
+    	width: 142px;
+    	float: left;
+    	display: block;
+    	margin: 330px 0 0 497px;
+	}
+	#bio-oil_200 a {
+		height: 53px;
+    	width: 142px;
+    	float: left;
+    	display: block;
+    	margin: 330px 0 0 83px;
+	}
+	#bio-oil_wrapper h1 {
+		color: #166729;
+		margin: 20px 0 5px;
+	}
+	#bio-oil_wrapper h1 span {
+		font-size: 14px;
+		vertical-align: text-top;
+	}
+	#bio-oil_wrapper h1 + p {
+		font-family: 'Source Sans Pro', Arial, sans-serif;
+    	font-size: 16px;
+    	color: #585958;
+    	font-size: 22px;
+    	margin: -10px 0 15px;
+	}
+	#bio-oil_wrapper h2 {
+		color: #166729;
+		margin: 20px 0 0;
+	}
+	#bio-oil_wrapper h2 + p span {
+		font-size: 8px;
+		vertical-align: text-top;
+	}
+	#bio-oil_featured {
+		width: 933px;
+	}
+	#bio-oil_featured div {
+		margin-right: 21px;
+		float: left;
+	}
+	#bio-oil_featured div:nth-last-child(1) {
+		margin-right: 0;
+	}
+	#bio-oil_footer {
+		margin: 15px 0 20px;
+	}
+	.clear {clear: both;}
+	#bio-oil_hero_mobile, #bio-oil_hero_2, #bio-oil_hero_3, #bio-oil_featured_mobile, #bio-oil_footer_mobile  {
+		display: none;
+	}
+	
+	/* --- mobile styles --- */
+	@media screen and (max-width:640px) { 
+		#bio-oil_wrapper {
+			font-size: 1em;
+		}
+		#bio-oil_wrapper img {
+			width: 100%;
+			height: auto;
+		}
+		#bio-oil_hero {
+			display: none;
+		}
+		#bio-oil_hero_mobile {
+			display: block;
+		}
+		#bio-oil_hero_mobile img {
+			margin: 2% 0;
+		}
+		#bio-oil_hero_2, #bio-oil_hero_3 {
+			display: block
+		}
+		#bio-oil_featured {
+			display: none;
+		}
+		#bio-oil_featured_mobile {
+			display: block;
+			margin: 2% 0;
+		}
+		#bio-oil_footer_mobile {
+			display: block;
+			margin: 2% 0;
+		}
+		#bio-oil_footer {
+			display: none;
+		}
+	}
+	
+	/* --- accordion styles --- */
+	accordion {
+		width: 100%;
+	}
+	.ui-accordion .ui-accordion-header {
+		display: block;
+		cursor: pointer;
+		position: relative;
+		margin: 2px 0 0 0;
+		padding: .5em .5em .5em .7em;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+		border: 1px solid #0e411a;
+		background: #166729;
+		font-weight: normal;
+		color: #ffffff;
+	}
+</style>
+<meta charset="utf-8">
+<title>Bio-Oil at Lloyds Pharmacy</title>
+</head>
+
+<body>
+<div id="bio-oil_wrapper">
+	<div id="bio-oil_hero">
+		<div id="bio-oil_125"><a href="http://www.lloydspharmacy.com/en/bio-oil-125ml?expDataType=CatalogEntryId&expDataUniqueID=102511" title="Bio-oil 125ml"></a></div>
+		<div id="bio-oil_200"><a href="http://www.lloydspharmacy.com/en/bio-oil-200ml?expDataType=CatalogEntryId&expDataUniqueID=94607" title="Bio-oil 200ml"></a></div>
+	</div><!-- end hero -->
+	<div id="bio-oil_hero_mobile">
+		<img src="images/lloyds_bo_hero_mobile.jpg" alt="Bio-oil at Lloyds">
+	</div>
+	<div id="bio-oil_hero_2"><a href="http://www.lloydspharmacy.com/en/bio-oil-125ml?expDataType=CatalogEntryId&expDataUniqueID=102511" title="Bio-oil 125ml"><img src="images/lloyds_bo_prod125_mobile.jpg" alt="Bio-oil 125ml"></a></div>
+	<div id="bio-oil_hero_3"><a href="http://www.lloydspharmacy.com/en/bio-oil-200ml?expDataType=CatalogEntryId&expDataUniqueID=94607" title="Bio-oil 200ml"><img src="images/lloyds_bo_prod200_mobile.jpg" alt="Bio-oil 200ml"></a></div>
+	<h1>Bio-Oil<span>®</span></h1>
+	<p>Specialist Skincare For:</p>
+	<div id="bio-oil_featured">
+		<div><img src="images/Lloyds_bio-oil_scars_desktop.jpg" alt="specialist skincare for scars"></div>
+		<div><img src="images/Lloyds_bio-oil_stretch_desktop.jpg" alt="specialist skincare for stretch marks"></div>
+		<div><img src="images/Lloyds_bio-oil_skin_desktop.jpg" alt="specialist skincare for uneven skin tone"></div>
+		<div><img src="images/Lloyds_bio-oil_ageing_desktop.jpg" alt="specialist skincare for ageing skin"></div>
+		<div><img src="images/Lloyds_bio-oil_dehydrating_desktop.jpg" alt="specialist skincare for ageing skin"></div>
+	</div><!-- end featured -->
+	<div id="bio-oil_featured_mobile">
+		<div>
+			<img src="images/Lloyds_bio-oil_scars_mobile.jpg" alt="Scars">
+		</div>
+		<div>
+			<img src="images/Lloyds_bio-oil_stetch_mobile.jpg" alt="Stretch marks">
+		</div>
+		<div>
+			<img src="images/Lloyds_bio-oil_skin_mobile.jpg" alt="Uneven skin tone">
+		</div>
+		<div>
+			<img src="images/Lloyds_bio-oil_ageing_mobile.jpg" alt="Ageing skin">
+		</div>
+		<div>
+			<img src="images/Lloyds_bio-oil_dehydrated_mobile.jpg" alt="Dehydrated skin">
+		</div>
+	</div><!-- end mobile featured -->
+	<div class="clear"></div>
+	<h2>How Bio-Oil works</h2>
+	<p>Bio Oil contains the breakthrough ingredient PurCellin Oil<span>TM</span> which works by reducing the thickness of the formulation making Bio Oil easier and quicker for the skin to absorb. Making it a highly effective fast acting, specialist skincare treatment that can be used to improve the appearance of:</p>
+	<div id="accordion">
+	  <h3>Scars</h3>
+	  <div>
+		<p>Bio Oil is specially formulated to help improve the appearance of both new and old scars. Although Bio Oil will never remove scars it can help improve the appearance of scars through regular use. For best results it is advised that Bio Oil should be massaged in a circular motion into the scar, twice daily, for a minimum of 3 months.</p>
+	  </div>
+	  <h3>Stretch Marks</h3>
+	  <div>
+		<p>Bio Oil is specially formulated to help reduce the possibility of stretch marks forming in those most likely to be effected such as pregnant women, body builders, adolescents undergoing sudden growth spurts and individuals who experience rapid weight gain. Bio Oil can also help improve the appearance of existing stretch marks although will never remove them.</p>
+	  </div>
+	  <h3>Uneven Skin Tone</h3>
+	  <div>
+		<p>Bio Oil can help improve the appearance of pigmentation marks and blemishes caused by hormonal fluctuations, skin lighteners or excessive sun exposure. Bio Oil should be applied to the affected areas, twice daily, for a minimum of 3 months.</p>
+	  </div>
+	  <h3>Ageing Skin</h3>
+	  <div>
+		<p>Bio Oil can help smooth and tone ageing, sagging and wrinkled skin on both the face and body.</p>
+	  </div>
+	  <h3>Dehydrated Skin</h3>
+	  <div>
+		<p>Bio Oil works by helping to replenish the skins natural oils, which can be stripped away through time by factors such as extreme weather conditions, water with high chemical content, frequent bathing and the drying effects that central heating and air conditioning systems can have on your skin.</p>
+	  </div>
+	</div><!-- end accordion -->
+	<div id="bio-oil_footer">
+		<img src="images/Lloyds_bio-oil_footer_desktop.jpg" alt="Bio-oil specialist skincare">
+	</div>
+	<div id="bio-oil_footer_mobile">
+		<img src="images/Lloyds_bio-oil_footer_mobile.jpg" alt="Bio-oil specialist skincare">
+	</div>
+</div><!-- end wrapper -->
+</body>
+</html>
